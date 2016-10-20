@@ -1,0 +1,28 @@
+.cercabk{
+	background-color:lightgrey;
+	padding-bottom:20px;
+	padding-right:10px;
+	margin:10px;
+	border-radius:7px;
+}
+#cerca{
+	margin-top:20px;
+}
+
+#genere{
+	width:50%;
+}
+
+#vedi{
+	widows:90%;
+	height:200px;
+	background-color:red;
+	display:none;
+}
+
+
+
+
+
+
+
