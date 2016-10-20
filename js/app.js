@@ -28,13 +28,17 @@ console.log(titolo);
 				
 				var obj=data.Search[i];
 				console.log(obj);
-				tr += "<tr>";
-				tr+="<td>" + obj.Year + "</td>";
-				tr+="<td>" + obj.Title + "</td>";
-				tr+="<td>" + obj.Type + "</td>";
-				tr+="<td><img src='"+ obj.Poster  +"'/></td>";
+				tr += "<tr id='"+ obj.imdbID +"'>";
+				if (obj.Poster !='N/A'){
+					tr+="<td class='col-md-3'><img id='locandina' src='"+ obj.Poster  +"'/></td>";
+				}else {
+					tr+="<td class='col-md-3'><img id='locandina' src='http://placehold.it/100x150'/></td>";
+				}
+				tr+="<td class='col-md-3'>" + obj.Title + "</td>";
+				tr+="<td class='col-md-3'>" + obj.Year + " </td>";
+				tr+="<td class='col-md-3'> " + obj.Type + "</td>";
+				tr+="<td class='col-md-0' id='invis'> " + obj.imdbID + "</td>";
 				tr+="</tr>";
-					
 			}
 			$("#listafilm").html(tr);
 		});

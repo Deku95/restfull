@@ -1,3 +1,10 @@
+td{
+	text-align:center;
+}
+tr{
+	border:10px;
+	width:100%;
+}
 .cercabk{
 	background-color:lightgrey;
 	padding-bottom:20px;
@@ -12,13 +19,24 @@
 #genere{
 	width:50%;
 }
-
+#film{
+	height:98px;
+	width:95%;
+	display:none;
+	background-color:grey;
+	opacity:0.5
+	
 #vedi{
 	widows:90%;
-	height:200px;
-	background-color:red;
 	display:none;
 }
+#locandina{
+	height:150px;
+}
+#invis{
+	display:none;
+}
+
 
 
 
