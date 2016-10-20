@@ -37,15 +37,17 @@
                         </div>
                     
 						<div class="col-md-1">
-						<button type="submit" class="btn btn-success" name="cerca" id="cerca" disabled="disable" >Cerca</button>
+						<button type="submit" class="btn btn-success" name="search" id="search" disabled="disable" >Cerca</button>
 						</div>
 				
         </div>  
 		<div id="vedi">
-			<div class="container">
+			
+				<table id="listafilm">
+				
+				</table>
 		
-		
-			</div>
+			
 		</div>
 		
 		
@@ -87,18 +89,18 @@
 		$("#titolo").on("keydown",function(event){
 		
 			var testo =	$("#titolo").val();
-console.log(testo);
+
 			if (testo != "" ){
-				$("#cerca").prop("disabled", false);
+				$("#search").prop("disabled", false);
 			}else{
-				$("#cerca").prop("disabled", true);
+				$("#search").prop("disabled", true);
 		}
-			
+		
 			
 			
 			});
 			<!-- Visualizzare la lista quando si preme il pulsante -->
-		$("#cerca").on("click",function(){		
+		$("#search").on("click",function(){		
 				$("#vedi ").show() ;
 		});
 		
