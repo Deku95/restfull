@@ -98,7 +98,7 @@
 		<!-- Alternare i due div -->
 		$("tbody").on("click",'tr',function(){
 					
-					
+					($("#vedi").css("display")=="none") ? $("#vedi").show() :  $("#vedi").hide();
 					($("#film").css("display")=="none") ? $("#film").show() :  $("#film").hide();
 					console.log($(this).attr("id"));
 				});

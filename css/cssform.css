@@ -25,7 +25,8 @@ tr{
 	display:none;
 	background-color:grey;
 	opacity:0.5
-	
+	position:abs;
+}
 #vedi{
 	widows:90%;
 	display:none;
